@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head><title>Modificar Usuario</title></head>
+<body>
+    <h1>Modificar Usuario</h1>
+    <form method="post">
+        <label>Nombre:</label><input type="text" name="nombre" value="{{ usuario.nombre }}" required><br>
+        <label>Email:</label><input type="email" name="email" value="{{ usuario.email }}" required><br>
+        <label>Rol:</label><input type="text" name="rol" value="{{ usuario.rol }}" required><br>
+        <button type="submit">Guardar cambios</button>
+    </form>
+    <a href="{{ url_for('listar_usuarios') }}">Volver a la lista</a>
+</body>
+</html>
